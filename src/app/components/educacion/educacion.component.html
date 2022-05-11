@@ -1,0 +1,29 @@
+<div class="contaianer-fluid">
+<div class="row">
+    <h1>Educación</h1>
+    <div class="col-lg-12"></div> <!--para que deje el espacio de una columna-->
+        <div class="col-xs-4 col-md-10 col-lg-12">
+        <ul class="items-educacion">
+            <li *ngFor="let educacion of educacionList">
+                <div class="data-container">
+                    <div>
+                        <h2>{{educacion.school}}</h2> 
+                            <h3>{{educacion.title}}</h3> 
+                                <p> <time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                                    <div class="logo-container">
+                                        <img style="width:250px" height="250px" class="img-fluid" [src]="educacion.img">
+                                    </div>
+                    </div>
+                        <p>{{educacion.skills}}</p>
+                        <br>
+                </div>
+             
+                
+            </li>
+                
+        </ul>
+           
+    
+        </div>
+    </div>
+</div>
